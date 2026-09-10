@@ -138,6 +138,11 @@
     .student-project h3 { margin: 0 0 9px; color: var(--navy); font-size: 1.3rem; }
     .student-project p { margin: 7px 0; color: var(--muted); }
     .student-project strong { color: var(--ink); }
+    .student-project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .student-project-card { padding: 25px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); box-shadow: 0 5px 20px rgba(18, 35, 63, .035); }
+    .student-project-card h3 { margin: 8px 0 13px; color: var(--navy); font-family: Georgia, "Times New Roman", serif; font-size: 1.22rem; line-height: 1.3; }
+    .student-project-card p { margin: 7px 0; color: var(--muted); font-size: .94rem; line-height: 1.5; }
+    .student-project-card strong { color: var(--ink); }
 
     .supervision-card { padding: 25px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
     .supervision-card h3 { margin: 0 0 15px; color: var(--navy); font-size: 1.23rem; }
@@ -188,7 +193,7 @@
       .nav-links a { font-size: .8rem; }
       .hero { padding: 62px 0 55px; }
       .section { padding: 66px 0; }
-      .research-grid, .collab-grid, .supervision-grid, .teaching-grid, .contact-grid { grid-template-columns: 1fr; }
+      .research-grid, .collab-grid, .supervision-grid, .student-project-grid, .teaching-grid, .contact-grid { grid-template-columns: 1fr; }
       .publication { grid-template-columns: 1fr; gap: 7px; }
       .seminar-band { grid-template-columns: 1fr; }
       h1 { font-size: clamp(2.7rem, 15vw, 4.5rem); }
@@ -208,6 +213,7 @@
         <a href="#publications">Publications</a>
         <a href="#collaborations">Collaborations</a>
         <a href="#supervision">Supervision</a>
+        <a href="#student-projects">Student projects</a>
         <a href="#teaching">Teaching</a>
         <a href="#seminar">Seminar</a>
         <a href="#cv">CV</a>
@@ -276,20 +282,31 @@
       </div>
     </section>
 
-    <section id="publications" class="section">
+    <section id="publications" class="section" data-version="2026-09-10-publication-update">
       <div class="wrap">
         <div class="section-heading">
-          <div><span class="section-kicker">Selected work</span><h2>Publications</h2></div>
-          <p class="section-intro">A selection of published papers and public preprints. Links point to DOI or arXiv records where available.</p>
+          <div><span class="section-kicker">Selected publications</span><h2>Publications</h2></div>
+          <p class="section-intro">Published papers and public preprints in noncommutative algebra, division rings, Leavitt algebras, and related K-theory. Links point to DOI or arXiv records.</p>
         </div>
         <div class="publication-list">
+          <article class="publication"><div class="publication-year">2026</div><div><h3 class="publication-title">Group algebras that do not embed into L<sub>K</sub>(1,2) <span class="status">Published</span></h3><p class="publication-meta">Huynh Viet Khanh · Research in the Mathematical Sciences 13 (2026), Article 72 · Published 18 August 2026</p><div class="publication-links"><a href="https://doi.org/10.1007/s40687-026-00656-5" target="_blank" rel="noopener">DOI</a><a href="https://link.springer.com/article/10.1007/s40687-026-00656-5" target="_blank" rel="noopener">Springer</a></div></div></article>
           <article class="publication"><div class="publication-year">2026</div><div><h3 class="publication-title">A note on Lie and Jordan structures of Leavitt path algebras</h3><p class="publication-meta">with L. Q. Danh · Journal of Algebra and Its Applications</p><div class="publication-links"><a href="https://doi.org/10.1142/S0219498827501568" target="_blank" rel="noopener">DOI</a></div></div></article>
           <article class="publication"><div class="publication-year">2025</div><div><h3 class="publication-title">On free subgroups in Leavitt path algebras</h3><p class="publication-meta">with B. X. Hai · Communications in Algebra</p><div class="publication-links"><a href="https://doi.org/10.1080/00927872.2025.2600489" target="_blank" rel="noopener">DOI</a></div></div></article>
           <article class="publication"><div class="publication-year">2025</div><div><h3 class="publication-title">On Congruence Theorem for valued division algebras</h3><p class="publication-meta">with N. D. A. Khoa · Archiv der Mathematik</p><div class="publication-links"><a href="https://doi.org/10.1007/s00013-025-02094-4" target="_blank" rel="noopener">DOI</a></div></div></article>
           <article class="publication"><div class="publication-year">2024</div><div><h3 class="publication-title">Leavitt path algebras in which every Lie ideal is an ideal and applications</h3><p class="publication-meta">Transformation Groups</p><div class="publication-links"><a href="https://doi.org/10.1007/s00031-024-09848-1" target="_blank" rel="noopener">DOI</a></div></div></article>
           <article class="publication"><div class="publication-year">2024</div><div><h3 class="publication-title">Locally solvable maximal subgroups in division rings</h3><p class="publication-meta">with B. X. Hai · Kyoto Journal of Mathematics</p><div class="publication-links"><a href="https://doi.org/10.1215/21562261-2023-0014" target="_blank" rel="noopener">DOI</a></div></div></article>
+          <article class="publication"><div class="publication-year">2022</div><div><h3 class="publication-title">Locally solvable and solvable-by-finite maximal subgroups of GL<sub>n</sub>(D)</h3><p class="publication-meta">with B. X. Hai · Publicationes Mathematicae</p><div class="publication-links"><a href="https://doi.org/10.5565/PUBLMAT6622203" target="_blank" rel="noopener">DOI</a></div></div></article>
+          <article class="publication"><div class="publication-year">2021</div><div><h3 class="publication-title">Locally solvable subnormal and quasinormal subgroups in division rings</h3><p class="publication-meta">with L. Q. Danh · Hiroshima Mathematical Journal</p><div class="publication-links"><a href="https://doi.org/10.32917/h2020101" target="_blank" rel="noopener">DOI</a></div></div></article>
+          <article class="publication"><div class="publication-year">2021</div><div><h3 class="publication-title">Multiplicative subgroups in weakly locally finite division rings</h3><p class="publication-meta">with B. X. Hai · Acta Mathematica Vietnamica</p><div class="publication-links"><a href="https://doi.org/10.1007/s40306-021-00437-0" target="_blank" rel="noopener">DOI</a></div></div></article>
+          <article class="publication"><div class="publication-year">2020</div><div><h3 class="publication-title">Generalized power central group identities in almost subnormal subgroups of GL<sub>n</sub>(D)</h3><p class="publication-meta">with B. X. Hai and M. H. Bien · St. Petersburg Mathematical Journal</p><div class="publication-links"><a href="https://doi.org/10.1090/spmj/1624" target="_blank" rel="noopener">DOI</a></div></div></article>
+          <article class="publication"><div class="publication-year">2020</div><div><h3 class="publication-title">On locally solvable subgroups in division rings</h3><p class="publication-meta">Journal of Algebra</p><div class="publication-links"><a href="https://doi.org/10.1016/j.jalgebra.2019.11.015" target="_blank" rel="noopener">DOI</a></div></div></article>
+          <article class="publication"><div class="publication-year">2019</div><div><h3 class="publication-title">Free subgroups in maximal subgroups of skew linear groups</h3><p class="publication-meta">with B. X. Hai · International Journal of Algebra and Computation</p><div class="publication-links"><a href="https://doi.org/10.1142/S0218196719500251" target="_blank" rel="noopener">DOI</a></div></div></article>
+          <article class="publication"><div class="publication-year">2026</div><div><h3 class="publication-title">General linear and Steinberg groups over the Leavitt algebra L<sub>F<sub>2</sub></sub>(1,2) <span class="status">Submitted preprint</span></h3><p class="publication-meta">arXiv:2609.08428 · sole author</p><div class="publication-links"><a href="https://arxiv.org/abs/2609.08428" target="_blank" rel="noopener">arXiv</a></div></div></article>
+          <article class="publication"><div class="publication-year">2026</div><div><h3 class="publication-title">Lie ideals and Lie derivations of the algebraic Toeplitz algebra <span class="status">Submitted preprint</span></h3><p class="publication-meta">with Thao Nhi Nguyen Huynh · arXiv:2609.04745</p><div class="publication-links"><a href="https://arxiv.org/abs/2609.04745" target="_blank" rel="noopener">arXiv</a></div></div></article>
+          <article class="publication"><div class="publication-year">2026</div><div><h3 class="publication-title">The group TK<sub>1</sub> of graded and valued division algebras <span class="status">Preprint</span></h3><p class="publication-meta">with N. D. A. Khoa and A. R. Wadsworth · arXiv:2607.17231</p><div class="publication-links"><a href="https://arxiv.org/abs/2607.17231" target="_blank" rel="noopener">arXiv</a></div></div></article>
+          <article class="publication"><div class="publication-year">2026</div><div><h3 class="publication-title">Matrix generators for the unit groups of L<sub>K</sub>(1,d) <span class="status">Preprint</span></h3><p class="publication-meta">with V. H. Thanh · arXiv:2607.10351</p><div class="publication-links"><a href="https://arxiv.org/abs/2607.10351" target="_blank" rel="noopener">arXiv</a></div></div></article>
           <article class="publication"><div class="publication-year">2026</div><div><h3 class="publication-title">Free subgroups in weighted Leavitt path algebras <span class="status">Preprint</span></h3><p class="publication-meta">arXiv:2606.20288</p><div class="publication-links"><a href="https://arxiv.org/abs/2606.20288" target="_blank" rel="noopener">arXiv</a></div></div></article>
-          <article class="publication"><div class="publication-year">2026</div><div><h3 class="publication-title">Abelian maximal subgroups of valued division algebras <span class="status">Preprint</span></h3><p class="publication-meta">arXiv:2603.28341</p><div class="publication-links"><a href="https://arxiv.org/abs/2603.28341" target="_blank" rel="noopener">arXiv</a></div></div></article>
+          <article class="publication"><div class="publication-year">2026</div><div><h3 class="publication-title">Abelian maximal subgroups of valued division algebras <span class="status">Preprint</span></h3><p class="publication-meta">arXiv:2603.28341v3</p><div class="publication-links"><a href="https://arxiv.org/abs/2603.28341" target="_blank" rel="noopener">arXiv</a></div></div></article>
         </div>
       </div>
     </section>
@@ -322,6 +339,23 @@
         <div class="supervision-grid">
           <article class="supervision-card"><h3>Doctoral researchers</h3><div class="person"><strong>Nguyen Duc Anh Khoa</strong><span>Research direction: valued and graded division algebras.</span></div><div class="person"><strong>Nguyen Huynh Thao Nhi</strong><span>Doctoral research under supervision in algebra and related areas.</span></div></article>
           <article class="supervision-card"><h3>Co-supervision</h3><div class="person"><strong>Cao Phan Anh Dung</strong><span>Co-supervised with Hà Văn Hiếu, University of Economics and Law, VNU-HCM.</span></div><div class="person"><strong>Student research groups</strong><span>Projects in algebra, number theory, ideal lattices, and related topics.</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="student-projects" class="section">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><span class="section-kicker">Undergraduate research</span><h2>Student research projects</h2></div>
+          <p class="section-intro">Selected undergraduate research projects supervised in algebra, number theory, group theory, and division-ring theory.</p>
+        </div>
+        <div class="student-project-grid">
+          <article class="student-project-card"><span class="small-label">K50</span><h3>Normal forms of involutions on twisted Laurent extensions</h3><p><strong>Student:</strong> Quách Đắc Lộc</p></article>
+          <article class="student-project-card"><span class="small-label">K50, K51 · Leavitt algebras</span><h3>Alternating random bilinear maps and class-two <em>p</em>-groups that are weakly maximal with respect to abelianization</h3><p><strong>Students:</strong> Nguyễn Hoàng Phúc; Vũ Tiến Đạt; Trần Hải Dương</p></article>
+          <article class="student-project-card"><span class="small-label">K50 · Leavitt algebras</span><h3>Explicit constructions of inverse matrix pairs in localizations of free algebras via matrix quotients</h3><p><strong>Students:</strong> Trần Tiến Đạt; Nguyễn Thị Thúy Hằng; Ngô Đức Tuấn; Nguyễn Phú Khánh Huy; Trần Minh Đức</p></article>
+          <article class="student-project-card"><span class="small-label">Student research project</span><h3>Commutator convergence and graded free resolutions over polynomial rings with coefficients in division rings</h3><p><strong>Student:</strong> Hoàng Anh Tú</p></article>
+          <article class="student-project-card"><span class="small-label">K50, K51 · Joint supervision</span><h3>Well-rounded ideals in pure quartic fields</h3><p><strong>Students:</strong> Nguyễn Thành Danh; Nguyễn Minh Thành; Nguyễn Võ Khôi Nguyên</p><p><strong>Co-supervision:</strong> Ha Tran, University of Alberta, Augustana Campus, Canada.</p></article>
+          <article class="student-project-card"><span class="small-label">K49</span><h3>Additive multiplicative functions on sums of <em>k</em> squares in imaginary quadratic principal ideal domains</h3><p><strong>Students:</strong> Trần Quốc Tuấn; Trần Gia Lộc</p></article>
         </div>
       </div>
     </section>
